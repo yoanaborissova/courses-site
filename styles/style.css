@@ -1,0 +1,116 @@
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body > * {
+  flex: 1 0 50%;
+}
+
+header {
+  background-color: indianred;
+  flex: 0, 1, 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  top: 0;
+  display: flex;
+  flex: 0 1 100%;
+}
+header section {
+  flex: 1;
+}
+header section img {
+  width: 70px;
+  height: 70px;
+}
+header ul {
+  flex: 2;
+  display: flex;
+}
+header ul li {
+  list-style-type: none;
+  border: 2px solid antiquewhite;
+  margin-right: 3em;
+  margin-top: 1.5em;
+  flex: 3;
+  cursor: pointer;
+}
+header ul li:hover {
+  background-color: aliceblue;
+}
+header ul li a {
+  font-size: 24px;
+  margin: 1em;
+  text-decoration: none;
+}
+
+footer {
+  flex: 0 1 100%;
+  display: flex;
+  background-color: aquamarine;
+  align-content: stretch;
+}
+footer section {
+  background-color: hotpink;
+  margin: 0.1em 0.1em 0.1em 0;
+  flex: 1;
+}
+
+.trendy-courses {
+  background-color: #ff;
+  display: flex;
+  justify-content: center;
+}
+.trendy-courses #slider-previous {
+  -webkit-transform: rotate(180deg);
+  /* Chrome and other webkit browsers */
+  -moz-transform: rotate(180deg);
+  /* FF */
+  -o-transform: rotate(180deg);
+  /* Opera */
+  -ms-transform: rotate(180deg);
+  /* IE9 */
+  transform: rotate(180deg);
+}
+.trendy-courses .slider {
+  background-image: url("https://images.vexels.com/media/users/3/136479/isolated/preview/72ca95e059828aea4edc31c04b0556ce-next-arrow-1-by-vexels.png");
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  cursor: pointer;
+}
+.trendy-courses a {
+  text-decoration: none;
+}
+.trendy-courses section {
+  border: 1px solid antiquewhite;
+  flex: 1;
+  margin: 1em;
+}
+.trendy-courses section img {
+  width: 240px;
+  height: 240px;
+}
+.trendy-courses section .course-logo {
+  text-align: center;
+}
+.trendy-courses section .course-info {
+  background-color: indianred;
+  color: white;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: 84vh;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */

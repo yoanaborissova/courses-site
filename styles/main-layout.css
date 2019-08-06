@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body > * {
+  flex: 1 0 50%;
+}
+
+/*# sourceMappingURL=main-layout.css.map */

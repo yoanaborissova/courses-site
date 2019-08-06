@@ -1,0 +1,17 @@
+@import "mixins";
+@import "sizes";
+@import "main-layout";
+@import "colors";
+@import "navbar";
+@import "footer";
+@import "trendy-courses";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: 84vh;
+  flex-direction: column;
+}

@@ -1,0 +1,12 @@
+footer {
+  flex: 0 1 100%;
+  display: flex;
+  background-color: aquamarine;
+  align-content: stretch;
+
+  section {
+    background-color: hotpink;
+    margin: 0.1em 0.1em 0.1em 0;
+    flex: 1;
+  }
+}

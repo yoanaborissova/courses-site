@@ -1,0 +1,9 @@
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  & > * {
+    flex: 1 0 50%;
+  }
+}

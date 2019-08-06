@@ -1,0 +1,49 @@
+.trendy-courses {
+  background-color: $trendyCoursesBackgroundColor;
+  display: flex;
+  justify-content: center;
+
+  #slider-previous {
+    -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+    -moz-transform: rotate(180deg);        /* FF */
+    -o-transform: rotate(180deg);          /* Opera */
+    -ms-transform: rotate(180deg);         /* IE9 */
+    transform: rotate(180deg);
+  }
+
+  .slider {
+    background-image: url("https://images.vexels.com/media/users/3/136479/isolated/preview/72ca95e059828aea4edc31c04b0556ce-next-arrow-1-by-vexels.png");
+    background-size: $sliderArrowSize $sliderArrowSize;
+    width: $sliderArrowSize;
+    height: $sliderArrowSize;
+    background-repeat: no-repeat;
+    margin-top: $sliderArrowSize;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  section {
+    border: 1px solid $trendyCoursesBorderColor;
+    flex: 1;
+    margin: 1em;
+
+    img {
+      width: 240px;
+      height: 240px;
+    }
+
+    .course-logo {
+      text-align: center;
+    }
+
+    .course-info {
+      background-color: $navBarBackgroundColor;
+      color: white;
+      text-align: center;
+    }
+
+  }
+}

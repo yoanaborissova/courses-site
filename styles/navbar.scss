@@ -1,0 +1,46 @@
+header {
+  background-color: $navBarBackgroundColor;
+  @include sticky();
+  top: 0;
+
+  display: flex;
+  flex: 0 1 100%;
+
+  section {
+    img {
+      width: 70px;
+      height: 70px;
+    }
+
+    flex: 1;
+  }
+
+  ul {
+    flex: 2;
+    display: flex;
+
+    li {
+      list-style-type: none;
+      border: 2px solid antiquewhite;
+      //border-radius: 5px;
+
+      margin-right: 3em;
+      margin-top: 1.5em;;
+
+      flex: 3;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: aliceblue ;
+      }
+
+      a {
+        font-size: 24px;
+        margin: 1em;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
