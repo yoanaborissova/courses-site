@@ -5,6 +5,9 @@
 @import "navbar";
 @import "footer";
 @import "trendy-courses";
+@import "trainers";
+@import "educations";
+@import "partners";
 
 * {
   margin: 0;
@@ -12,6 +15,8 @@
 }
 
 main {
+  z-index: 1;
   min-height: 84vh;
   flex-direction: column;
 }
+

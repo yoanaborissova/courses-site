@@ -4,4 +4,11 @@ document.querySelectorAll('nav ul li a').forEach(a => {
             .then(x => x.text())
             .then(x => document.querySelector('main').innerHTML = x);
     }
-})
+});
+
+
+
+document.querySelectorAll(".expand").forEach(a => {
+
+});
+

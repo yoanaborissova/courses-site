@@ -1,11 +1,11 @@
 footer {
   flex: 0 1 100%;
   display: flex;
-  background-color: aquamarine;
+  background-color: $trendyCoursesBorderColor;
   align-content: stretch;
 
   section {
-    background-color: hotpink;
+    background-color: $navBarBackgroundColor;
     margin: 0.1em 0.1em 0.1em 0;
     flex: 1;
   }

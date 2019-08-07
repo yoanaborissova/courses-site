@@ -1,4 +1,5 @@
 header {
+  z-index: 999;
   background-color: $navBarBackgroundColor;
   @include sticky();
   top: 0;

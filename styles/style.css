@@ -8,6 +8,7 @@ body > * {
 }
 
 header {
+  z-index: 999;
   background-color: indianred;
   flex: 0, 1, 100%;
   position: -webkit-sticky;
@@ -48,11 +49,11 @@ header ul li a {
 footer {
   flex: 0 1 100%;
   display: flex;
-  background-color: aquamarine;
+  background-color: antiquewhite;
   align-content: stretch;
 }
 footer section {
-  background-color: hotpink;
+  background-color: indianred;
   margin: 0.1em 0.1em 0.1em 0;
   flex: 1;
 }
@@ -103,12 +104,196 @@ footer section {
   text-align: center;
 }
 
+.trainer-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(3, 12em);
+  grid-template-rows: repeat(2, 14em);
+  grid-gap: 0.2em;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+  /* Style the back side */
+}
+.trainer-container .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.trainer-container .flip-card:hover .flip-card-inner {
+  border-radius: 15px;
+  transform: rotateY(180deg);
+}
+.trainer-container .flip-card-front, .trainer-container .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.trainer-container .flip-card-back {
+  border-radius: 15px;
+  transform: rotateY(180deg);
+}
+.trainer-container .flip-card-front {
+  background-color: indianred;
+  border-radius: 15px;
+}
+.trainer-container .trainer {
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.trainer-container .trainer p {
+  display: none;
+}
+.trainer-container .trainer:hover {
+  background-color: indianred;
+}
+.trainer-container .trainer:hover p {
+  display: block;
+}
+.trainer-container .trainer .trainer-image {
+  height: 75%;
+  background-color: indianred;
+}
+.trainer-container .trainer .trainer-headline {
+  background-color: indianred;
+}
+.trainer-container .trainer img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.trainer-container .trainer .description {
+  color: white;
+}
+
+.container-educations {
+  display: grid;
+  grid-template-columns: repeat(3, 33.333%);
+  grid-template-rows: repeat(1, 10em);
+  align-content: stretch;
+}
+.container-educations div {
+  border: 1px solid indianred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container-educations div p {
+  color: crimson;
+}
+.container-educations div img {
+  height: 2em;
+  width: 2em;
+}
+.container-educations div .break {
+  flex-basis: 100%;
+  height: 0;
+  border: none;
+}
+
+.container-list {
+  display: grid;
+  grid-template-columns: repeat(3, 33.333%);
+  grid-template-rows: repeat(1, 15em);
+  align-content: stretch;
+}
+.container-list div {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container-list div li {
+  list-style-type: none;
+  border: 1px solid indianred;
+  background-color: indianred;
+  border-radius: 1em;
+  color: #ffffff;
+  margin: 1em;
+  padding: 0.2em 8.5em;
+  text-align: center;
+}
+.container-list .first, .container-list .third {
+  display: none;
+}
+
+.partners-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(3, 18em);
+  grid-template-rows: repeat(2, 9em);
+  grid-gap: 0.2em;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+  /* Style the back side */
+}
+.partners-container .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.partners-container .flip-card:hover .flip-card-inner {
+  border-radius: 15px;
+  transform: rotateY(180deg);
+}
+.partners-container .flip-card-front, .partners-container .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.partners-container .flip-card-back {
+  border-radius: 15px;
+  transform: rotateY(180deg);
+}
+.partners-container .flip-card-front {
+  background-color: indianred;
+  border-radius: 15px;
+}
+.partners-container .partner-image {
+  margin-top: 2.75em;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.partners-container .partner-image img {
+  max-width: 90%;
+  max-height: 90%;
+}
+.partners-container .flip-card-front {
+  background-color: transparent;
+  border: 1px solid indianred;
+}
+.partners-container .flip-card-back {
+  background-color: indianred;
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 main {
+  z-index: 1;
   min-height: 84vh;
   flex-direction: column;
 }

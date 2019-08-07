@@ -1,0 +1,55 @@
+.trainer-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(3, 12em);
+  grid-template-rows: repeat(2, 14em);
+  grid-gap: 0.2em;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+
+  @include flipCard();
+
+  .trainer {
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+
+    p {
+      display: none;
+    }
+
+    &:hover {
+      background-color: $navBarBackgroundColor;
+
+      p {
+        display: block;
+      }
+    }
+
+    .trainer-image {
+      height: 75%;
+      background-color: $navBarBackgroundColor;
+    }
+
+
+    .trainer-headline {
+      background-color: $navBarBackgroundColor;
+    }
+
+
+    img {
+      height: 100%;
+      width: 100%;
+      //border-radius: 50%;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .description {
+      color: white;
+    }
+
+
+  }
+}
