@@ -1,13 +1,35 @@
+.slided {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: blue;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+
+  @keyframes & {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  @-webkit-keyframes & {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+  }
+}
+
+
 .trendy-courses {
   background-color: $trendyCoursesBackgroundColor;
   display: flex;
   justify-content: center;
 
   #slider-previous {
-    -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
-    -moz-transform: rotate(180deg);        /* FF */
-    -o-transform: rotate(180deg);          /* Opera */
-    -ms-transform: rotate(180deg);         /* IE9 */
+    -webkit-transform: rotate(180deg); /* Chrome and other webkit browsers */
+    -moz-transform: rotate(180deg); /* FF */
+    -o-transform: rotate(180deg); /* Opera */
+    -ms-transform: rotate(180deg); /* IE9 */
     transform: rotate(180deg);
   }
 
@@ -26,9 +48,10 @@
   }
 
   section {
-    border: 1px solid $trendyCoursesBorderColor;
     flex: 1;
     margin: 1em;
+    cursor: pointer;
+    text-decoration: none;
 
     img {
       width: 240px;
@@ -36,12 +59,13 @@
     }
 
     .course-logo {
+      border: 1px solid $trendyCoursesBorderColor;
       text-align: center;
     }
 
     .course-info {
       background-color: $navBarBackgroundColor;
-      color: white;
+      color: $fontsColor;
       text-align: center;
     }
 

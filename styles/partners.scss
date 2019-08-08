@@ -8,6 +8,8 @@
   align-content: center;
   text-decoration: none;
 
+  color: $fontsColor;
+
   @include flipCard();
 
   .partner-image {
@@ -28,6 +30,6 @@
 
   .flip-card-back {
     background-color: $navBarBackgroundColor;
-    color: #fff;
+    color: $fontsColor;
   }
 }

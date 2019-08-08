@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic");
 body {
   display: flex;
   flex-direction: row;
@@ -8,8 +9,9 @@ body > * {
 }
 
 header {
+  height: 64px;
   z-index: 999;
-  background-color: indianred;
+  background-color: #fce4d6;
   flex: 0, 1, 100%;
   position: -webkit-sticky;
   position: sticky;
@@ -30,18 +32,23 @@ header ul {
   display: flex;
 }
 header ul li {
+  padding: 0.3em;
   list-style-type: none;
-  border: 2px solid antiquewhite;
-  margin-right: 3em;
-  margin-top: 1.5em;
+  margin-right: 0.45em;
+  margin-top: 1em;
   flex: 3;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 header ul li:hover {
-  background-color: aliceblue;
+  background-color: antiquewhite;
 }
 header ul li a {
-  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #6A1D1A;
+  font-size: 18px;
   margin: 1em;
   text-decoration: none;
 }
@@ -53,9 +60,36 @@ footer {
   align-content: stretch;
 }
 footer section {
-  background-color: indianred;
+  background-color: #fce4d6;
   margin: 0.1em 0.1em 0.1em 0;
   flex: 1;
+}
+
+.slided {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: blue;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+}
+@keyframes & {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes & {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
 }
 
 .trendy-courses {
@@ -87,20 +121,22 @@ footer section {
   text-decoration: none;
 }
 .trendy-courses section {
-  border: 1px solid antiquewhite;
   flex: 1;
   margin: 1em;
+  cursor: pointer;
+  text-decoration: none;
 }
 .trendy-courses section img {
   width: 240px;
   height: 240px;
 }
 .trendy-courses section .course-logo {
+  border: 1px solid antiquewhite;
   text-align: center;
 }
 .trendy-courses section .course-info {
-  background-color: indianred;
-  color: white;
+  background-color: #fce4d6;
+  color: #6A1D1A;
   text-align: center;
 }
 
@@ -141,7 +177,7 @@ footer section {
   transform: rotateY(180deg);
 }
 .trainer-container .flip-card-front {
-  background-color: indianred;
+  background-color: #fce4d6;
   border-radius: 15px;
 }
 .trainer-container .trainer {
@@ -150,21 +186,25 @@ footer section {
   text-decoration: none;
   border-radius: 10px;
 }
+.trainer-container .trainer .flip-card-back, .trainer-container .trainer .flip-card-front {
+  color: #6A1D1A;
+}
 .trainer-container .trainer p {
   display: none;
 }
 .trainer-container .trainer:hover {
-  background-color: indianred;
+  background-color: #fce4d6;
 }
 .trainer-container .trainer:hover p {
   display: block;
+  color: #6A1D1A;
 }
 .trainer-container .trainer .trainer-image {
   height: 75%;
-  background-color: indianred;
+  background-color: #fce4d6;
 }
 .trainer-container .trainer .trainer-headline {
-  background-color: indianred;
+  background-color: #fce4d6;
 }
 .trainer-container .trainer img {
   height: 100%;
@@ -172,7 +212,7 @@ footer section {
   border-radius: 15px 15px 0 0;
 }
 .trainer-container .trainer .description {
-  color: white;
+  color: #6A1D1A;
 }
 
 .container-educations {
@@ -182,7 +222,7 @@ footer section {
   align-content: stretch;
 }
 .container-educations div {
-  border: 1px solid indianred;
+  border: 1px solid #fce4d6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,8 +256,8 @@ footer section {
 }
 .container-list div li {
   list-style-type: none;
-  border: 1px solid indianred;
-  background-color: indianred;
+  border: 1px solid #fce4d6;
+  background-color: #fce4d6;
   border-radius: 1em;
   color: #ffffff;
   margin: 1em;
@@ -237,6 +277,7 @@ footer section {
   justify-content: center;
   align-content: center;
   text-decoration: none;
+  color: #6A1D1A;
   /* This container is needed to position the front and back side */
   /* Do an horizontal flip when you move the mouse over the flip box container */
   /* Position the front and back side */
@@ -265,7 +306,7 @@ footer section {
   transform: rotateY(180deg);
 }
 .partners-container .flip-card-front {
-  background-color: indianred;
+  background-color: #fce4d6;
   border-radius: 15px;
 }
 .partners-container .partner-image {
@@ -280,11 +321,11 @@ footer section {
 }
 .partners-container .flip-card-front {
   background-color: transparent;
-  border: 1px solid indianred;
+  border: 1px solid #fce4d6;
 }
 .partners-container .flip-card-back {
-  background-color: indianred;
-  color: #fff;
+  background-color: #fce4d6;
+  color: #6A1D1A;
 }
 
 * {
