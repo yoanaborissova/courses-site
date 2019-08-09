@@ -1,24 +1,4 @@
-.slided {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: blue;
-  transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-  animation: slide-out 0.5s forwards;
-  -webkit-animation: slide-out 0.5s forwards;
-
-  @keyframes & {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
-  }
-
-  @-webkit-keyframes & {
-    0% { -webkit-transform: translateX(0%); }
-    100% { -webkit-transform: translateX(-100%); }
-  }
-}
-
+@include flipBox();
 
 .trendy-courses {
   background-color: $trendyCoursesBackgroundColor;

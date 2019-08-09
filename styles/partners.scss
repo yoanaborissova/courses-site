@@ -1,12 +1,13 @@
 .partners-container {
   display: grid;
-  height: 100vh;
+  min-height: 82vh;
   grid-template-columns: repeat(3, 18em);
   grid-template-rows: repeat(2, 9em);
-  grid-gap: 0.2em;
+  grid-gap: 0.4em;
   justify-content: center;
   align-content: center;
   text-decoration: none;
+
 
   color: $fontsColor;
 
@@ -31,5 +32,18 @@
   .flip-card-back {
     background-color: $navBarBackgroundColor;
     color: $fontsColor;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .partners-container {
+    grid-template-columns: repeat(1, 18em);
+    grid-template-rows: repeat(6, 9em);
+    z-index: -1;
+    padding-top: 1em;
+
+    .flip-card {
+      padding-bottom: 1em;
+    }
   }
 }
