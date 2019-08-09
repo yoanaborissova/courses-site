@@ -1,14 +1,12 @@
 window.onload = () => {
     let hash = window.location.hash.substring(1);
 
-    if (hash.length <= 0) {
-        return;
-    }
-
     fetch(hash)
         .then(x => x.text())
         .then(x => {
-                loadHTML("main", x);
+                if (hash.length > 0) {
+                    loadHTML("main", x);
+                }
 
                 document.querySelectorAll('.nav-bar-link').forEach(a => {
                     a.onclick = e => {
@@ -17,13 +15,6 @@ window.onload = () => {
                             .then(x => loadHTML("main", x));
                     }
                 });
-
-                document.querySelectorAll(".expand").forEach(e => {
-                    e.onclick = () => {
-                        console.log("expand clicked");
-                    }
-                });
-
 
                 const trendyCourses = [
                     {
@@ -83,16 +74,34 @@ window.onload = () => {
                     },
                 ];
 
-                const perClick = 3;
+                window.onresize = () => {
+                    renderMain();
+                };
 
-                addPreviousButton();
-                for (let courseId = 0; courseId < Math.min(perClick, trendyCourses.length); courseId++)
-                    addCourse(courseId + 1, trendyCourses[courseId]);
-                addNextButton();
+                document.querySelector("#home-page").onclick = renderMain;
 
-                document.querySelector("#slider-next").onclick = () => changeContent(1);
-                document.querySelector("#slider-previous").onclick = () => changeContent(-1);
-                changeCursors(-1);
+                if (hash.length <= 0) {
+                    renderMain();
+                }
+
+                function renderMain(perClick) {
+                    perClick = 3;
+                    if (window.innerWidth < 600) {
+                        perClick = 1;
+                    } else if (window.innerWidth < 800) {
+                        perClick = 2;
+                    }
+                    document.querySelector("main").innerHTML = `<div class="trendy-courses"></div>`;
+                    addPreviousButton();
+                    for (let courseId = 0; courseId < Math.min(perClick, trendyCourses.length); courseId++)
+                        addCourse(courseId + 1, trendyCourses[courseId]);
+                    addNextButton();
+
+                    document.querySelector("#slider-next").onclick = () => changeContent(1);
+                    document.querySelector("#slider-previous").onclick = () => changeContent(-1);
+                    changeCursors(-1);
+                }
+
 
                 function addPreviousButton() {
                     document.querySelector(".trendy-courses").innerHTML += `<div id="slider-previous" class="slider"></div>`;
@@ -105,8 +114,8 @@ window.onload = () => {
                 function addCourse(courseId, course) {
                     document.querySelector(".trendy-courses").innerHTML +=
                         `<section class="flip-box course-section" data-id="course-${courseId}"> 
-            ${getCourseContent(courseId, course)}
-        </section>`;
+        ${getCourseContent(courseId, course)}
+    </section>`;
                 }
 
                 function getCursor(index, predicate, direction) {
@@ -173,14 +182,14 @@ window.onload = () => {
 
                 function getCourseContent(courseId, course) {
                     return `<div class="flip-box-inner">
-                <div class="course-logo">
-                    <img src="${course.img}" alt="pepper"/>
-                </div>
-                <div class="course-info">
-                    <h1>${course.title} ${courseId}</h1>
-                    <p>${course.description}</p>
-                </div>
-            </div>`;
+            <div class="course-logo">
+                <img src="${course.img}" alt="pepper"/>
+            </div>
+            <div class="course-info">
+                <h1>${course.title} ${courseId}</h1>
+                <p>${course.description}</p>
+            </div>
+        </div>`;
                 }
 
                 function loadHTML(selector, html) {
