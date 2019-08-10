@@ -103,16 +103,21 @@ header .dropdown:hover img {
   }
 }
 footer {
+  flex: 0 0 100%;
   z-index: 1;
-  flex: 0 1 100%;
-  display: flex;
-  background-color: antiquewhite;
-  align-content: stretch;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  padding: 1em 0;
+  color: #333333;
+  font-weight: bold;
+  text-shadow: 0px 0px 6px #F2AC33;
 }
-footer section {
-  background-color: #333333;
-  margin: 0.1em 0.1em 0.1em 0;
-  flex: 1;
+footer p {
+  text-align: center;
+}
+footer img {
+  width: 50px;
+  height: 25px;
 }
 
 .flip-box-inner {
