@@ -418,9 +418,26 @@ footer section {
 .form-container form button {
   display: block;
   position: relative;
-  margin: 2em auto 0 auto;
+  margin: 0.8em auto 0 auto;
+  border-radius: 0.4em;
+  padding: 0.6em;
+  background-color: #333333;
+  color: #F2AC33;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+.form-container form button:hover {
+  cursor: pointer;
+  color: #ffffff;
 }
 
+@media screen and (max-width: 750px) {
+  .form-container {
+    margin: 3em 4em;
+  }
+}
 * {
   margin: 0;
   padding: 0;

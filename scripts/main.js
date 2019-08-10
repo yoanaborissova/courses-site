@@ -83,9 +83,11 @@ window.onload = () => {
                     },
                 ];
 
-                // window.onresize = () => {
-                //     renderMain();
-                // };
+                window.onresize = () => {
+                    if (document.getElementsByClassName('trendy-courses').length > 0){
+                        renderMain();
+                    }
+                };
 
                 document.querySelector("#home-page").onclick = renderMain;
 
