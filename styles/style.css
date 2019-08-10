@@ -10,7 +10,7 @@ body > * {
 @media screen and (max-width: 500px) {
   body .trendy-courses {
     flex-direction: column;
-    margin: 0;
+    margin: -5em 0 0 0;
     padding: 0;
     justify-content: center;
     align-items: center;

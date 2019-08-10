@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a06e7f2b-d35d-484f-aac3-441594e96813" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/educations.html" beforeDir="false" afterPath="$PROJECT_DIR$/educations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/MainComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/MainComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/educations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/educations.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/main-layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main-layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/partners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/partners.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/trainers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/trainers.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/main-layout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -228,12 +221,12 @@
       <updated>1565039226831</updated>
       <workItem from="1565039230861" duration="1087000" />
       <workItem from="1565040347489" duration="25167000" />
-      <workItem from="1565129339975" duration="71744000" />
+      <workItem from="1565129339975" duration="72353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97998000" />
+    <option name="totallyTimeSpent" value="98607000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -516,8 +509,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/main-layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
