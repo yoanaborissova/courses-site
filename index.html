@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="styles/style.css"/>
-    <link rel="shortcut icon" href="./img/peppers.png" />
+    <link rel="shortcut icon" href="./img/peppers.png"/>
+    <script src="scripts/Component.js"></script>
+    <script src="scripts/Router.js"></script>
 </head>
 <body>
 <header>
@@ -15,40 +17,21 @@
     </section>
     <nav>
         <ul>
-            <li><a class="nav-bar-link" href="#about.html" 
-                   data-content="about.html">За 
-                нас</a></li>
-            <li><a class="nav-bar-link" href="#educations.html" 
-                   data-content="educations.html">
-                Обучения</a></li>
-            <li><a class="nav-bar-link" href="#partners.html" 
-                   data-content="partners.html">Партньори
-            </a></li>
-            <li><a class="nav-bar-link" href="#trainers.html" 
-                   data-content="trainers.html">Трейнъри
-            </a></li>
-            <li><a class="nav-bar-link" href="#contacts.html" 
-                   data-content="contacts.html">Контакти
-            </a></li>
+            <li><a class="nav-bar-link" href="#about">За нас</a></li>
+            <li><a class="nav-bar-link" href="#educations">Обучения</a></li>
+            <li><a class="nav-bar-link" href="#partners">Партньори</a></li>
+            <li><a class="nav-bar-link" href="#trainers">Трейнъри</a></li>
+            <li><a class="nav-bar-link" href="#contacts">Контакти</a></li>
         </ul>
         <div class="dropdown">
             <img src="./img/dropdown.png"
                  alt="hover me">
             <div class="dropdown-content">
-            <span><a class="nav-bar-link" href="#about.html"
-                                           data-content="about.html">За нас</a></span>
-            <span><a class="nav-bar-link" href="#educations.html"
-                                           data-content="educations.html">Обучения</a>
-            </span>
-            <span><a class="nav-bar-link" href="#partners.html"
-                                           data-content="partners.html">Партньори</a>
-            </span>
-            <span><a class="nav-bar-link" href="#trainers.html"
-                                           data-content="trainers.html">Трейнъри</a>
-            </span>
-            <span><a class="nav-bar-link" href="#contacts.html"
-                                           data-content="contacts.html">Контакти</a>
-            </span>
+                <span><a class="nav-bar-link" href="#about">За нас</a></span>
+                <span><a class="nav-bar-link" href="#educations">Обучения</a></span>
+                <span><a class="nav-bar-link" href="#partners">Партньори</a></span>
+                <span><a class="nav-bar-link" href="#trainers">Трейнъри</a></span>
+                <span><a class="nav-bar-link" href="#contacts">Контакти</a></span>
             </div>
         </div>
     </nav>
@@ -72,5 +55,11 @@
 </body>
 </html>
 <section id="scripts">
-    <script src="scripts/main.js"></script>
+    <script src="scripts/MainComponent.js"></script>
+    <script src="scripts/TrainersComponent.js"></script>
+    <script src="scripts/EducationsComponent.js"></script>
+    <script src="scripts/ContactsComponent.js"></script>
+    <script src="scripts/PartnersComponent.js"></script>
+    <script src="scripts/AboutComponent.js"></script>
+    <script src="scripts/app.js"></script>
 </section>
