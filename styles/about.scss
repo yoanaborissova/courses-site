@@ -1,0 +1,50 @@
+.about-container {
+  margin: 0 auto;
+  background-color: $fontsColor;
+  height: 100%;
+  width: 60%;
+  text-align: center;
+  padding: 2em;
+  border: 1px solid $navBarBackgroundColor;
+  font-family: "Roboto", sans-serif;
+
+  p {
+    padding: 2em;
+  }
+
+  .line {
+    width: 100%;
+    height: 1.3px;
+    background-color: $navBarBackgroundColor;
+    margin-bottom: 2em;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .team {
+      height: 60%;
+      width: 30%;
+    }
+  }
+
+  .big-team {
+    max-width: 90%;
+    max-height: 90%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .gallery {
+    flex-direction: column;
+    justify-content: center;
+
+    .team {
+      margin: 0 auto;
+    }
+  }
+}
+
+

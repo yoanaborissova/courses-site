@@ -1,5 +1,7 @@
 .form-container {
-  margin: 5em 25em;
+  margin: 5em auto;
+  height: 60%;
+  width: 40%;
   background-color: $fontsColor;
   border-radius: 2em;
   padding: 2em;
@@ -14,10 +16,10 @@
     margin: 0 auto;
     display: block;
     position: relative;
-    width: 30em;
+    width: 100%;
     input, textarea {
       margin: 0 auto 0.5em auto;
-      width: 30em;
+      width: 60%;
       border-radius: 0.4em;
       padding: 0.4em;
       background-color: $lightest;
@@ -58,8 +60,4 @@
 }
 
 
-@media screen and (max-width: 750px) {
-  .form-container {
-    margin: 3em 4em;
-  }
-}
+

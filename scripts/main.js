@@ -18,9 +18,6 @@ window.onload = () => {
 
                 document.querySelectorAll('.expand').forEach(a => {
                     a.onclick = e => {
-                        // fetch(e.target.getAttribute('data-content'))
-                        //     .then(x => x.text())
-                        //     .then(x => loadHTML("main", x));
                         console.log('here');
                     }
                 });
