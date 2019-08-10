@@ -32,6 +32,7 @@
     margin: 1em;
     cursor: pointer;
     text-decoration: none;
+    background-color: $lightest;
 
     img {
       width: 240px;
@@ -39,7 +40,7 @@
     }
 
     .course-logo {
-      border: 1px solid $trendyCoursesBorderColor;
+      border: 1px solid $fontsColor;
       text-align: center;
     }
 

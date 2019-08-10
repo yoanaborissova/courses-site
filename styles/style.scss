@@ -10,10 +10,15 @@
 @import "trainers";
 @import "educations";
 @import "partners";
+@import "contacts";
 
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: white;
 }
 
 main {
@@ -22,7 +27,7 @@ main {
   flex-direction: column;
 }
 
-body {
-  background-color: #F4F8F9;
-}
+.trendy-courses {
+  padding-top: 7em;
 
+}

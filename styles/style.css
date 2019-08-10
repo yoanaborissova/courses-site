@@ -153,13 +153,14 @@ footer section {
   margin: 1em;
   cursor: pointer;
   text-decoration: none;
+  background-color: #f4f8f;
 }
 .trendy-courses section img {
   width: 240px;
   height: 240px;
 }
 .trendy-courses section .course-logo {
-  border: 1px solid antiquewhite;
+  border: 1px solid #F2AC33;
   text-align: center;
 }
 .trendy-courses section .course-info {
@@ -378,9 +379,55 @@ footer section {
     padding-bottom: 1em;
   }
 }
+.form-container {
+  margin: 5em 25em;
+  background-color: #F2AC33;
+  border-radius: 2em;
+  padding: 2em;
+  text-align: center;
+  border: 1px solid #333333;
+  -webkit-box-shadow: 0px 1px 8px 3px rgba(51, 51, 3, 0.76);
+  -moz-box-shadow: 0px 1px 8px 3px rgba(51, 51, 3, 0.76);
+  box-shadow: 0px 1px 8px 3px rgba(51, 51, 3, 0.76);
+}
+.form-container form {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 30em;
+}
+.form-container form input, .form-container form textarea {
+  margin: 0 auto 0.5em auto;
+  width: 30em;
+  border-radius: 0.4em;
+  padding: 0.4em;
+  background-color: #f4f8f;
+  border: 1px solid #333333;
+  outline: none;
+}
+.form-container form input:focus, .form-container form textarea:focus {
+  border: 2px solid #333333;
+}
+.form-container form h3 {
+  display: block;
+  position: relative;
+  margin: 0 auto 1em auto;
+  font-family: "Roboto", sans-serif;
+}
+.form-container form button {
+  display: block;
+  position: relative;
+  margin: 2em auto 0 auto;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: white;
 }
 
 main {
@@ -389,8 +436,8 @@ main {
   flex-direction: column;
 }
 
-body {
-  background-color: #F4F8F9;
+.trendy-courses {
+  padding-top: 7em;
 }
 
 /*# sourceMappingURL=style.css.map */

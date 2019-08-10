@@ -16,6 +16,15 @@ window.onload = () => {
                     }
                 });
 
+                document.querySelectorAll('.expand').forEach(a => {
+                    a.onclick = e => {
+                        // fetch(e.target.getAttribute('data-content'))
+                        //     .then(x => x.text())
+                        //     .then(x => loadHTML("main", x));
+                        console.log('here');
+                    }
+                });
+
                 const trendyCourses = [
                     {
                         img: 'img/peppers.png',
@@ -74,9 +83,9 @@ window.onload = () => {
                     },
                 ];
 
-                window.onresize = () => {
-                    renderMain();
-                };
+                // window.onresize = () => {
+                //     renderMain();
+                // };
 
                 document.querySelector("#home-page").onclick = renderMain;
 
