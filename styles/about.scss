@@ -5,7 +5,8 @@
   width: 60%;
   text-align: center;
   padding: 2em;
-  border: 1px solid $navBarBackgroundColor;
+  border-right: 1px solid $navBarBackgroundColor;
+  border-left: 1px solid $navBarBackgroundColor;
   font-family: "Roboto", sans-serif;
 
   p {

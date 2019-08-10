@@ -107,13 +107,13 @@ footer {
   z-index: 1;
   position: relative;
   font-family: "Roboto", sans-serif;
-  padding: 1em 0;
   color: #333333;
   font-weight: bold;
   text-shadow: 0px 0px 6px #F2AC33;
 }
 footer p {
   text-align: center;
+  padding-bottom: 1em;
 }
 footer img {
   width: 50px;
@@ -158,7 +158,7 @@ footer img {
   margin: 1em;
   cursor: pointer;
   text-decoration: none;
-  background-color: #f4f8f;
+  background-color: #F3F7F8;
 }
 .trendy-courses section img {
   width: 240px;
@@ -267,14 +267,21 @@ footer img {
   align-content: stretch;
 }
 .container-educations div {
-  border: 1px solid #333333;
+  border: 2px solid #F2AC33;
+  border-right: none;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #F3F7F8;
+  text-align: center;
 }
 .container-educations div p {
-  color: crimson;
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 23px;
+  text-shadow: 0px 0px 6px #F2AC33;
 }
 .container-educations div img {
   height: 2em;
@@ -285,34 +292,50 @@ footer img {
   height: 0;
   border: none;
 }
+.container-educations div a {
+  cursor: pointer;
+}
 
 .container-list {
   display: grid;
   grid-template-columns: repeat(3, 33.333%);
-  grid-template-rows: repeat(1, 15em);
-  align-content: stretch;
+  grid-template-rows: repeat(1, 100%);
 }
 .container-list div {
   background-color: transparent;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
-.container-list div li {
-  list-style-type: none;
-  border: 1px solid #333333;
-  background-color: #333333;
-  border-radius: 1em;
-  color: #ffffff;
-  margin: 1em;
-  padding: 0.2em 8.5em;
-  text-align: center;
-}
-.container-list .first, .container-list .third {
+.container-list div ul {
   display: none;
+  width: 70%;
+  text-align: center;
+  margin-top: 1em;
+}
+.container-list div ul li {
+  opacity: 0;
+  list-style-type: none;
+  border: 1px solid #F2AC33;
+  background-color: #333333;
+  color: #F2AC33;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding: 0.2em;
+  text-align: center;
+  width: 100%;
+  animation: fadeIn 0.3s ease-in;
+  animation-fill-mode: forwards;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateX(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .partners-container {
   display: grid;
   min-height: 82vh;
@@ -409,7 +432,7 @@ footer img {
   width: 60%;
   border-radius: 0.4em;
   padding: 0.4em;
-  background-color: #f4f8f;
+  background-color: #F3F7F8;
   border: 1px solid #333333;
   outline: none;
 }
@@ -447,7 +470,8 @@ footer img {
   width: 60%;
   text-align: center;
   padding: 2em;
-  border: 1px solid #333333;
+  border-right: 1px solid #333333;
+  border-left: 1px solid #333333;
   font-family: "Roboto", sans-serif;
 }
 .about-container p {
@@ -488,7 +512,7 @@ footer img {
 }
 
 body {
-  background-color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
