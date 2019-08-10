@@ -1,6 +1,6 @@
 .trainer-container {
   display: grid;
-  height: 100vh;
+  min-height: 82vh;
   grid-template-columns: repeat(3, 12em);
   grid-template-rows: repeat(2, 14em);
   grid-gap: 0.2em;
@@ -68,5 +68,14 @@
     grid-template-rows: repeat(3, 14em);
     padding-top: 1em;
     padding-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .trainer-container {
+    grid-template-columns: repeat(1, 12em);
+    grid-template-rows: repeat(6, 14em);
+    margin-bottom: 3em;
+    z-index: -1;
   }
 }

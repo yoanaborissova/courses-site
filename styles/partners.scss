@@ -35,6 +35,19 @@
   }
 }
 
+@media screen and (max-width: 920px) {
+  .partners-container {
+    grid-template-columns: repeat(2, 18em);
+    grid-template-rows: repeat(3, 9em);
+    z-index: -1;
+    padding-top: 1em;
+
+    .flip-card {
+      padding-bottom: 1em;
+    }
+  }
+}
+
 @media screen and (max-width: 650px) {
   .partners-container {
     grid-template-columns: repeat(1, 18em);
@@ -47,3 +60,5 @@
     }
   }
 }
+
+

@@ -6,4 +6,29 @@ body {
   & > * {
     flex: 1 0 50%;
   }
+
+  @media screen and (max-width: 500px) {
+    .trendy-courses {
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+
+      #slider-previous {
+        transform: rotate(-90deg);
+      }
+
+      #slider-next {
+        transform: rotate(90deg);
+        margin-top: -10px;
+      }
+
+      #slider-previous, #slider-next {
+
+      }
+    }
+  }
 }
+
+

@@ -5,11 +5,11 @@ class MainComponent extends Component {
 
         this.resolutions = {
             tablet: {
-                width: 800,
+                width: 1000,
                 count: 2,
             },
             phone: {
-                width: 600,
+                width: 750,
                 count: 1
             }
         };
