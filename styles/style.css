@@ -10,7 +10,7 @@ body > * {
 @media screen and (max-width: 500px) {
   body .trendy-courses {
     flex-direction: column;
-    margin: -5em 0 0 0;
+    margin: -6em 0 0 0;
     padding: 0;
     justify-content: center;
     align-items: center;
@@ -480,7 +480,7 @@ footer img {
 }
 .form-container form input, .form-container form textarea {
   margin: 0 auto 0.5em auto;
-  width: 60%;
+  width: 80%;
   border-radius: 0.4em;
   padding: 0.4em;
   background-color: #F3F7F8;
