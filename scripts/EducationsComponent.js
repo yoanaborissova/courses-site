@@ -7,8 +7,15 @@ class EducationsComponent extends Component {
     attachEvents() {
         document.querySelectorAll('.expand').forEach(a => {
             a.onclick = (e) => {
+                let id;
 
-                let id = e.path[2].id;
+                if (e.path){
+                    id = e.path[2].id;
+                } else if (e.originalTarget) {
+                    id = e.originalTarget.parentElement.parentElement.attributes['id'].value;
+                } else {
+                    id = e.target.parentElement.attributes[0].ownerElement.parentElement.id;
+                }
 
                 let startDelay = 0;
 
@@ -19,7 +26,8 @@ class EducationsComponent extends Component {
                 }
 
                 if (document.getElementById(id + '-list')
-                    .getAttribute('style') === 'display: none') {
+                    .getAttribute('style') !== 'display: block')
+                {
                     document.getElementById(id + '-list')
                         .setAttribute('style', 'display: block');
                     document.getElementById(id)

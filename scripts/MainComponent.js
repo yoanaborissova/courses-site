@@ -185,7 +185,7 @@ class MainComponent extends Component {
     }
 
     getCourseContent(courseId, course) {
-        return `
+        return`
         <div class="flip-box-inner">
             <div class="course-logo">
                 <img src="${course.img}" alt="pepper"/>
