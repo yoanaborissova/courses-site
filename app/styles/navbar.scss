@@ -62,11 +62,10 @@ header {
     display: none;
     position: absolute;
     background-color: $navBarBackgroundColor;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 25px;
     padding: 0.5em;
     z-index: 1;
-
   }
 
   .dropdown:hover .dropdown-content {
@@ -93,4 +92,3 @@ header {
     }
   }
 }
-

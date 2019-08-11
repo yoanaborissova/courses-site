@@ -1,9 +1,7 @@
 .container-educations {
   display: grid;
-  //height: 100vh;
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(1, 8em);
-  //grid-gap: 0.2em;
   justify-content: center;
   align-content: center;
   padding-top: 1em;
@@ -88,13 +86,11 @@
         text-align: center;
         width: 100%;
 
-
         animation: fadeIn 0.3s ease-in;
         animation-fill-mode: forwards;
       }
     }
   }
-
 }
 
 @keyframes fadeIn {

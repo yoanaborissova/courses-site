@@ -6,15 +6,15 @@
   justify-content: center;
 
   #slider-previous {
-    -webkit-transform: rotate(180deg); /* Chrome and other webkit browsers */
-    -moz-transform: rotate(180deg); /* FF */
-    -o-transform: rotate(180deg); /* Opera */
-    -ms-transform: rotate(180deg); /* IE9 */
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
   }
 
   .slider {
-    background-image: url("https://images.vexels.com/media/users/3/136479/isolated/preview/72ca95e059828aea4edc31c04b0556ce-next-arrow-1-by-vexels.png");
+    background-image: url("../img/next-arrow.png");
     background-size: $sliderArrowSize $sliderArrowSize;
     width: $sliderArrowSize;
     height: $sliderArrowSize;
@@ -49,6 +49,5 @@
       color: $fontsColor;
       text-align: center;
     }
-
   }
 }
